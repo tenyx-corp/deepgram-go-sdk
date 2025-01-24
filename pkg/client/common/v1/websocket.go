@@ -155,7 +155,7 @@ func (c *WSClient) internalConnectWithCancel(ctx context.Context, ctxCancel cont
 	}
 
 	// sets the API key
-	myHeader.Set("Host", c.cOptions.Host)
+	// myHeader.Set("Host", c.cOptions.Host)
 	myHeader.Set("Authorization", "token "+c.cOptions.APIKey)
 	myHeader.Set("User-Agent", clientinterfaces.DgAgent)
 
@@ -190,6 +190,7 @@ func (c *WSClient) internalConnectWithCancel(ctx context.Context, ctxCancel cont
 		klog.V(5).Infof("Connecting to %s\n", url)
 
 		// if host starts with "ws://", then disable TLS
+		klog.V(1).Infof("Using DefaultDialer!!")
 		dialer := websocket.DefaultDialer
 		// if url[:5] == "ws://" {
 		// 	dialer = websocket.Dialer{
