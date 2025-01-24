@@ -12,9 +12,9 @@ import (
 	"os"
 	"time"
 
-	microphone "github.com/deepgram/deepgram-go-sdk/pkg/audio/microphone"
-	interfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces"
-	client "github.com/deepgram/deepgram-go-sdk/pkg/client/listen"
+	microphone "github.com/tenyx-corp/deepgram-go-sdk/pkg/audio/microphone"
+	interfaces "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/interfaces"
+	client "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/listen"
 )
 
 func main() {

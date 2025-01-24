@@ -6,8 +6,8 @@
 package analyze
 
 import (
-	analyzev1 "github.com/deepgram/deepgram-go-sdk/pkg/client/analyze/v1"
-	interfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces/v1"
+	analyzev1 "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/analyze/v1"
+	interfaces "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/interfaces/v1"
 )
 
 const (

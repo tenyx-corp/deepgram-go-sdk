@@ -8,7 +8,7 @@ import (
 	"context"
 	"net/http"
 
-	interfacesv1 "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces/v1"
+	interfacesv1 "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/interfaces/v1"
 )
 
 // DgAgent is the agent version

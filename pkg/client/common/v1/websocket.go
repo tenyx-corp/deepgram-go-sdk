@@ -7,7 +7,6 @@ package commonv1
 
 import (
 	"context"
-	"crypto/tls"
 	"encoding/json"
 	"io"
 	"net/http"
@@ -17,8 +16,8 @@ import (
 	"github.com/dvonthenen/websocket"
 	klog "k8s.io/klog/v2"
 
-	commonv1interfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/common/v1/interfaces"
-	clientinterfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces"
+	commonv1interfaces "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/common/v1/interfaces"
+	clientinterfaces "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/interfaces"
 )
 
 // gocritic:ignore

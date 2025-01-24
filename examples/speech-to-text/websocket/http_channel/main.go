@@ -13,8 +13,8 @@ import (
 	"os"
 	"reflect"
 
-	interfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces"
-	client "github.com/deepgram/deepgram-go-sdk/pkg/client/listen"
+	interfaces "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/interfaces"
+	client "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/listen"
 )
 
 const (

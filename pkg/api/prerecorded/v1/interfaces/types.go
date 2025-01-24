@@ -5,7 +5,7 @@
 package interfacesv1
 
 import (
-	interfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces/v1"
+	interfaces "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/interfaces/v1"
 )
 
 /***********************************/

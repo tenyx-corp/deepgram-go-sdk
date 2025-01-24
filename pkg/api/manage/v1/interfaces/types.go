@@ -10,7 +10,7 @@ package interfaces
 import (
 	"time"
 
-	"github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces"
+	"github.com/tenyx-corp/deepgram-go-sdk/pkg/client/interfaces"
 )
 
 /***********************************/

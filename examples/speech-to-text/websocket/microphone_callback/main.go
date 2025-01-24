@@ -12,10 +12,10 @@ import (
 	"os"
 	"strings"
 
-	api "github.com/deepgram/deepgram-go-sdk/pkg/api/listen/v1/websocket/interfaces"
-	microphone "github.com/deepgram/deepgram-go-sdk/pkg/audio/microphone"
-	interfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces"
-	client "github.com/deepgram/deepgram-go-sdk/pkg/client/listen"
+	api "github.com/tenyx-corp/deepgram-go-sdk/pkg/api/listen/v1/websocket/interfaces"
+	microphone "github.com/tenyx-corp/deepgram-go-sdk/pkg/audio/microphone"
+	interfaces "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/interfaces"
+	client "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/listen"
 )
 
 // Implement your own callback

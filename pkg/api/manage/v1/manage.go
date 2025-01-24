@@ -8,9 +8,9 @@ This package contains the code for the Keys APIs in the Deepgram Manage API
 package manage
 
 import (
-	common "github.com/deepgram/deepgram-go-sdk/pkg/client/common/v1"
-	manage "github.com/deepgram/deepgram-go-sdk/pkg/client/manage"
-	rest "github.com/deepgram/deepgram-go-sdk/pkg/client/rest" //lint:ignore
+	common "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/common/v1"
+	manage "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/manage"
+	rest "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/rest" //lint:ignore
 )
 
 const (

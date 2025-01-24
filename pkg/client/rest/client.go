@@ -12,8 +12,8 @@
 package rest
 
 import (
-	interfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces/v1"
-	restv1 "github.com/deepgram/deepgram-go-sdk/pkg/client/rest/v1"
+	interfaces "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/interfaces/v1"
+	restv1 "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/rest/v1"
 )
 
 const (

@@ -12,8 +12,8 @@
 package prerecorded
 
 import (
-	interfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces/v1"
-	listenv1rest "github.com/deepgram/deepgram-go-sdk/pkg/client/listen/v1/rest"
+	interfaces "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/interfaces/v1"
+	listenv1rest "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/listen/v1/rest"
 )
 
 /***********************************/

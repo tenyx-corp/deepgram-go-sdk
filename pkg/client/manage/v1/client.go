@@ -11,9 +11,9 @@ import (
 
 	"k8s.io/klog/v2"
 
-	version "github.com/deepgram/deepgram-go-sdk/pkg/api/version"
-	common "github.com/deepgram/deepgram-go-sdk/pkg/client/common/v1"
-	interfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/interfaces/v1"
+	version "github.com/tenyx-corp/deepgram-go-sdk/pkg/api/version"
+	common "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/common/v1"
+	interfaces "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/interfaces/v1"
 )
 
 const (

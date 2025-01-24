@@ -5,7 +5,7 @@
 package interfacesv1
 
 import (
-	commoninterfaces "github.com/deepgram/deepgram-go-sdk/pkg/client/common/v1/interfaces"
+	commoninterfaces "github.com/tenyx-corp/deepgram-go-sdk/pkg/client/common/v1/interfaces"
 )
 
 // These are the message types that can be received from the live API
