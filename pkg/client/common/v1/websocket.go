@@ -195,6 +195,7 @@ func (c *WSClient) internalConnectWithCancel(ctx context.Context, ctxCancel cont
 		if url[:5] == "ws://" {
 			dialer = websocket.Dialer{
 				HandshakeTimeout: 15 * time.Second,
+				Proxy:            http.ProxyFromEnvironment,
 				RedirectService:  c.cOptions.RedirectService,
 			}
 		} else {
@@ -204,6 +205,7 @@ func (c *WSClient) internalConnectWithCancel(ctx context.Context, ctxCancel cont
 				TLSClientConfig: &tls.Config{InsecureSkipVerify: c.cOptions.SkipServerAuth},
 				RedirectService: c.cOptions.RedirectService,
 				SkipServerAuth:  c.cOptions.SkipServerAuth,
+				Proxy:           http.ProxyFromEnvironment,
 			}
 		}
 		// perform the websocket connection
