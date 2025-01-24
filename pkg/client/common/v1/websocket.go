@@ -191,23 +191,23 @@ func (c *WSClient) internalConnectWithCancel(ctx context.Context, ctxCancel cont
 		klog.V(5).Infof("Connecting to %s\n", url)
 
 		// if host starts with "ws://", then disable TLS
-		var dialer websocket.Dialer
-		if url[:5] == "ws://" {
-			dialer = websocket.Dialer{
-				HandshakeTimeout: 15 * time.Second,
-				Proxy:            http.ProxyFromEnvironment,
-				RedirectService:  c.cOptions.RedirectService,
-			}
-		} else {
-			dialer = websocket.Dialer{
-				HandshakeTimeout: 15 * time.Second,
-				/* #nosec G402 */
-				TLSClientConfig: &tls.Config{InsecureSkipVerify: c.cOptions.SkipServerAuth},
-				RedirectService: c.cOptions.RedirectService,
-				SkipServerAuth:  c.cOptions.SkipServerAuth,
-				Proxy:           http.ProxyFromEnvironment,
-			}
-		}
+		dialer := websocket.DefaultDialer
+		// if url[:5] == "ws://" {
+		// 	dialer = websocket.Dialer{
+		// 		HandshakeTimeout: 15 * time.Second,
+		// 		Proxy:            http.ProxyFromEnvironment,
+		// 		RedirectService:  c.cOptions.RedirectService,
+		// 	}
+		// } else {
+		// 	dialer = websocket.Dialer{
+		// 		HandshakeTimeout: 15 * time.Second,
+		// 		/* #nosec G402 */
+		// 		TLSClientConfig: &tls.Config{InsecureSkipVerify: c.cOptions.SkipServerAuth},
+		// 		RedirectService: c.cOptions.RedirectService,
+		// 		SkipServerAuth:  c.cOptions.SkipServerAuth,
+		// 		Proxy:           http.ProxyFromEnvironment,
+		// 	}
+		// }
 		// perform the websocket connection
 		ws, res, err := dialer.DialContext(c.ctx, url, myHeader)
 		if res != nil {
